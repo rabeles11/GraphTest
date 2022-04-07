@@ -1,0 +1,6 @@
+type NewUser @entity {
+  id: ID!
+  adres_of_user: Bytes
+  displayName: String
+  surName: String
+}

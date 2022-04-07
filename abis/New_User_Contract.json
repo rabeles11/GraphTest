@@ -1,0 +1,56 @@
+[
+  {
+    "inputs": [
+      { "internalType": "uint256", "name": "_id", "type": "uint256" },
+      { "internalType": "string", "name": "_displayName", "type": "string" },
+      { "internalType": "string", "name": "_surName", "type": "string" }
+    ],
+    "name": "add_user",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  { "inputs": [], "stateMutability": "nonpayable", "type": "constructor" },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "adres_of_user",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "displayName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "surName",
+        "type": "string"
+      }
+    ],
+    "name": "NewUser",
+    "type": "event"
+  },
+  {
+    "inputs": [{ "internalType": "uint256", "name": "", "type": "uint256" }],
+    "name": "Users",
+    "outputs": [
+      { "internalType": "address", "name": "adres_of_user", "type": "address" },
+      { "internalType": "string", "name": "name", "type": "string" },
+      { "internalType": "string", "name": "surname", "type": "string" }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
